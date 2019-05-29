@@ -1,0 +1,774 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+ padding: 0;
+ margin: 0;
+ font-size: 100%;
+ font-weight: normal;
+}
+table { border-collapse: collapse; border-spacing: 0; }
+td, th, caption { font-weight: normal; text-align: left; }
+img, fieldset { border: 0; }
+ol { padding-left: 1.4em; list-style: decimal; }
+ul { padding-left: 1.4em; list-style:square; }
+q:before, q:after { content:''; }
+
+/****************Fin del reset****************/
+
+@font-face{
+	font-family: "Kaushan" ;
+	src:url(fonts/KaushanScript-Regular.ttf) ;
+}
+
+@-webkit-keyframes textShadow{
+	from{text-shadow: 5px 10px 20px blue;}
+	to{text-shadow: 6px 7px 15px red;}
+}
+
+@-moz-keyframes textShadow{
+	50%{text-shadow: 5px 10px 20px blue;}
+}
+@-o-keyframes textShadow{
+	50%{text-shadow: 5px 10px 20px blue;}
+}
+@-ms-keyframes textShadow{
+	50%{text-shadow: 5px 10px 20px blue;}
+}
+
+
+body{
+	font-size:70% ;
+	background-image:url(img/utils/background.jpg) ;
+	background-color:#FFF ;
+	background-size:cover ;	
+}
+#mainHeader{
+	float:left;
+	width:75% ;
+	height:5%;
+	font:bold 7em "Kaushan" ;
+	display:flex;
+	justify-content: space-between ;
+}
+
+#mainHeader hgroup{
+	width:100% ;
+	height:25%;
+	display:flex;
+	flex-wrap:wrap;
+}
+
+#mainHeader hgroup h1{
+	font:normal 1.2em "Kaushan" ;
+	padding-right:5%;
+	border-bottom:double #069 ;
+	border-right:double #069 ;
+	border-bottom-right-radius:30px ;
+	display:flex ;
+	flex-wrap:wrap ;
+}
+
+#mainHeader hgroup h2{
+	margin:0 auto; 
+}
+
+#shield{
+	float: left;
+	width:25% ;
+	margin:0 ;
+	display:flex ;
+	justify-content:center ;
+}
+nav{
+	float:left;
+	width:75.2% ;
+}
+
+/***************Navigation bar***************/
+#navList{
+	font:normal 4.5em "Kaushan" ;
+	list-style-type:none ;
+	text-align:center;
+	display:flex ;
+	justify-content:space-between ;
+	flex-wrap:wrap ;
+
+}
+
+#navList a{
+	color:#000 ;
+	text-decoration:none;
+}
+
+#navList a li{
+	border-bottom:solid #069 ;
+	border-left:dashed #069 ;
+	border-bottom-left-radius:20px ;
+}
+
+#navList a:hover{
+	color:#000 ;
+	background-color: transparent ;
+	-webkit-animation: textShadow 3s infinite;
+	-moz-animation: textShadow 3s infinite;
+	-o-animation: textShadow 3s infinite;
+	-ms-animation: textShadow 3s infinite;
+}
+section{
+	width:100%;
+	padding-top:13%;
+}
+
+section h1{
+	font:bold 4em "Lucida Sans Unicode", "Lucida Grande", sans-serif ;
+	width:75%;
+	text-shadow:#666 5px 5px 5px ;
+	border-bottom:ridge #CCC ;
+	padding-left: 15%;	
+	display:flex;
+	align-item:center;
+	
+	transition:all 0.5s ;
+}
+
+section h1 a{
+	color:#000 ;
+}
+/***************End navigation bar***************/
+
+/****End of the shared header of the every web****/
+/***************Style for articles****************/
+article{
+	float:left ;
+	width:100% ;
+	font-size:2em;
+	text-align:justify ;
+	padding:0;
+}
+
+section h2{
+	font:bold 2.5em "Kaushan" ;	
+	float:left;
+	text-shadow:#666 5px 5px 5px ;
+	padding-left:20%;  
+	border-bottom:inset #333 ;
+	width:25%;
+}
+
+.artWithImg{
+	display:flex;
+	/*flex-wrap:wrap;*/
+	align-items:center;
+	margin-bottom:3%;
+}
+
+.artWithImg p{
+	width:63%;
+	margin:0 auto;
+	float:left;
+	display:flex;
+	align-items:center;
+}
+
+article p{
+	width:75%;
+	margin:2% auto;
+	display:flex;	
+}
+
+.artWithImg figure{
+	float:left ;
+	margin:1% auto;
+	width:auto;
+	height:100%;
+	border:groove #333;
+}
+
+.artWithImg figure figcaption{
+	float:center;
+	display:flex ;
+	justify-content:center ;
+}
+
+article ul{
+	margin:2% auto ;
+	word-break:break;
+	font-size:90% ;
+	width:75%;
+}
+article ul il{
+	width:50%;
+}
+/*****************End Articles*********************/
+/*
+img:hover{
+	-webkit-animation: imgShadow 2s infinite;
+}
+*/
+/**********************Footer**********************/	
+footer{
+	font: 1em Verdana, Geneva, sans-serif ;
+	float:left ;
+	width:100% ;
+	margin-top:2%;
+	display:flex ;
+	justify-content:center;
+	flex-wrap:wrap ;
+}
+footer p{
+	float:right;
+	width:100%;
+	margin:1% auto;
+	display:flex ;
+	justify-content: center ;
+	flex-wrap:wrap ;
+}
+footer p span{
+	font-weight:bold;
+	text-decoration:underline ;
+}
+/*******************End Footer********************/
+
+
+/**********************Home**********************/
+.iFrame{
+	margin: 25px auto ;
+	width:100%;
+	display:flex ;
+	justify-content:center ;	
+}
+
+.imgRow {
+	height:auto ;
+	display: flex;
+	justify-content:center;
+	flex-wrap: wrap;
+	padding: 0 4px;}
+
+/* Create four equal columns that sits next to each other */
+.imgColumn {
+  max-width: 25%;
+  max-height: 25%;
+  padding: 0 4px;
+}
+
+.imgColumn img {
+	margin-top: 8px;
+	vertical-align: middle;
+	
+	-webkit-transition:-webkit-transform 0.3s ease-in-out 0.1s ;
+	-moz-transition:-moz-transform 0.3s ease-in-out 0.1s ;
+	-ms-transition:-ms-transform 0.3s ease-in-out 0.1s ;
+	-o-transition:-o-transform 0.3s ease-in-out 0.1s ;
+}
+
+.imgColumn img:hover{
+	-webkit-transform:scale(1.5) ;	
+	-moz-transform:scale(1.5) ;	
+	-ms-transform:scale(1.5) ;	
+	-o-transform:scale(1.5) ;	
+}
+
+/********************History********************/
+
+#imgHistory{
+	margin-top: 3% ;
+	border:groove #333 ;
+}
+#imgHistory figcaption{
+	float:center;
+	display:flex ;
+	justify-content:center ;
+}
+
+/********************Our Town********************/
+
+#imgOurTown{
+	float:left ;
+	width:100%;
+	margin:0 auto ;
+	display:flex;
+	justify-content:space-around ;
+	flex-wrap:wrap;
+}
+
+table{
+	font-size:1.7em ;
+	float:left;
+	width:100% ;
+	margin: 2% auto; 
+	display:flex;
+	justify-content:center;
+}
+table tbody{
+	width:75% ;
+}
+table td{
+	text-justify:auto;
+	border: solid #999 ;
+}
+
+.dropdown{
+}
+.dropbtn {
+	display:none;
+}
+
+/**************************************************/
+/**************************************************/
+.popup {
+	width:75%;
+	height:100%;
+	position: relative;
+	display: right;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 0.5s;
+  animation: fadeIn 0.5s;
+}
+.popup .hide {
+  visibility: hidden;
+}
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+
+/************** MODAL BOX**********************/
+
+#banner{
+	width:auto; 
+	display:flex ;
+	justify-content:space-around ;
+	padding: 0 auto;
+	margin: 2% auto;
+	padding:1%;
+	align-items:center;
+}
+#banner img{
+	max-width:30%;
+}
+
+.myImg {
+	/*flex:30%;*/
+  	border-radius: 5px;
+  	cursor: pointer;
+  	transition: 0.3s;
+}
+
+.myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 5%; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 50%;
+  max-width: 50%;
+}
+
+
+/* Add Animation */
+.modal-content {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+  -moz-animation-name: zoom;
+  -moz-animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+@-moz-keyframes zoom {
+  from {-moz-transform:scale(0)} 
+  to {-moz-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/**************END MODAL BOX**********************/
+
+
+/**************************************************/
+/**************************************************/
+@media print{
+	body{
+		font-size:40%;
+	}
+	nav{
+		display:none;
+	}
+	article{
+		page-break-after:always;
+	}
+	
+	#breaker{
+		page-break-before: always;
+	}
+	
+	.artWithImg p{
+		font-size:90% ;
+	}
+	.artWithImg figure{
+		width:35%;
+		max-width:35%;
+		border: none;
+	
+	}
+	.artWithImg figure img{
+		width:100%;
+		height: 100%;
+	}
+	
+	#imgOurTown{
+		display:none;
+	}
+	
+	#imgOurTown .myImg{
+		display: none;
+	}
+	.iFrame{
+		display:none;
+	}
+}
+
+
+@media screen and (min-width:768px) and (max-width: 1024px){
+	body{
+		font-size:50% ;
+	}
+	#shield img{
+		height:25% ;
+		width:25%;
+	}
+	
+	#navList{
+		width:100%;
+		padding-left:0;
+	}
+	.dropdown{
+		width:100%;
+		display:flex;
+		justify-content:center;
+		flex-wrap:wrap;
+	}
+	.dropdown-content{
+		flex:75%;
+		max-width:75%;
+		margin:1% auto;
+	}
+	#banner{
+		width:100%;
+		display:flex;
+		justify-content:center; 
+		align-items:flex-start;
+		flex-wrap:wrap;
+	}
+	.modal-content {
+		width: 60%;
+  		max-width: 60%;
+	}
+	.iFrame iframe{
+		width:75%;
+	}
+	.artWithImg figure{
+		width: 25%;
+		height:25%;
+		margin:4% auto ;
+	}
+	
+	.artWithImg figure img{
+		width:100%;
+		height:100%;
+	}
+	
+	#imgOurTown img{
+		width:35%;
+		height:35%;
+	}
+}
+@media screen and (min-width:600px) and (max-width: 767px) {
+	body{
+		font-size:35%;
+	}
+	#shield img{
+		height:25% ;
+		width:25%;
+	}
+  	.imgColumn {
+    	flex: 25%;
+    	max-width: 25%;
+  	}
+	#navList{
+		width:100%;
+		padding-left:0;
+	}
+	
+	#banner{
+		width:100%;
+		display:flex;
+		justify-content:center;
+	}
+	.modal-content {
+		width: 45%;
+		max-width: 45%;
+	}
+	.iFrame{
+		width:75%;
+	}
+	.iFrame iframe{
+		margin:2% auto;
+	}
+	.dropdown{
+		width:100%;
+		display:flex;
+		flex-wrap:wrap;
+	}
+	.dropdown-content{
+		flex:75%;
+		max-width:75%;
+		margin:1% auto;
+	}
+		
+	.artWithImg figure{
+		width: 25%;
+		height:25%;
+		margin:4% auto ;
+	}
+	
+	.artWithImg figure img{
+		width:100%;
+		height:100%;
+	}
+	#imgOurTown img{
+		width:35%;
+		height:35%;
+	}
+
+}
+@media screen and (min-width: 319px) and (max-width: 599px){
+	body{
+		font-size:45%;
+	}
+	#mainHeader hgroup h1{
+		font-size:1em ;
+	}
+	#shield img{
+		height:60% ;
+		width:60%;
+	}
+	section h1{
+		width:75% ;
+		padding-left:5%;
+	}
+	#navList{
+		display:block ;
+		margin-bottom: 3%;
+		padding-left:0;
+	}
+	#banner {
+		display:flex;
+		justify-content:center;
+	}
+	#banner img{
+		width:25% ;
+		height:25%;
+	}
+	
+	.modal{
+		padding-top:20%;
+	}
+	.modal-content {
+		width: 100%;
+		max-width: 100%;
+	}
+
+
+	article{
+		display:flex ;
+		flex-wrap:wrap ;
+	}
+	
+	.iFrame iframe{
+		width:100%;
+		border: double #000000;
+	}
+	
+	footer{
+		font:0.7em ;
+		width:100% ;
+		float:center ;
+		word-wrap:wrap;
+	}
+	
+	#imgOurTown{
+		float:left ;
+		width:100%;
+		margin:0 auto ;
+		display:flex;
+		justify-content:space-around ;
+
+	}
+	#imgOurTown img{
+		width:50%;
+		height:50%;
+	}
+	
+	.artWithImg figure{
+		width: 75%;
+		height:100%;
+		margin:4% auto ;
+	}
+	
+	.artWithImg figure img{
+		width:100%;
+		height:100%;
+	}
+	.imgColumn {
+    	flex: 25%;
+    	max-width: 25%;
+		max-height: 25%;
+  	}
+	
+	#mainHeader hgroup h2{
+		display:none; 
+	}
+	
+	section h2{
+		width:75%;
+	}
+	
+	.dropdown {
+		float: left;
+		width: 30%;
+		margin-left: 12%;
+		display: inline-block;
+	}
+
+	.dropbtn {
+		display:flex;
+		font:4em "Kaushan" ;
+		width:100%;
+		justify-content: space-around ;
+		border-right:none ;
+		border-bottom:solid #069 ;
+		border-left:dashed #069 ;
+		border-bottom-left-radius:20px ;
+	}
+	
+	i{
+		border: dashed black;
+  		border-width: 0 4px 4px 0;
+  		display: inline-block;
+		margin-top: 13%;
+		margin-left: 19%;
+  		padding: 5px;
+	}
+	.down {
+  		transform: rotate(45deg);
+  		-webkit-transform: rotate(45deg);
+	}
+	
+	.dropdown-content {
+		display:none ;
+		position: absolute;
+		width:45%;
+		padding-bottom:0;
+		background-color: #CCC ;
+		z-index: 1;
+		border-top: solid #069;	
+		border-radius:0 25px 0 25px;
+	}
+	
+	.dropdown-content a {
+		text-decoration: none;
+		display: block;
+	}
+	
+	.dropdown-content a:hover {background-color: transparent;}
+	.dropdown:hover .dropdown-content {display: block;}
+	.dropdown:hover .dropbtn {background-color: transparent;}
+
+}

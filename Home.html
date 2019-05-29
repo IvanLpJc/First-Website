@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="iso-8859-1">
+<meta name="description" content="Guide about Jodar, a charming town">
+<meta name="keywords" content="HTML5, CSS3, JavaScript">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jodar | Home</title>
+
+<link href="webStyle.css" rel="stylesheet">
+<link  rel="icon" href="img/utils/shieldPNG.png" type="image/png">
+<script src="webJs.js" defer></script>
+
+</head>
+
+<body>
+
+<header id="mainHeader">
+	<hgroup>
+		<h1>JÓDAR</h1>
+    	<h2>Home</h2>
+    </hgroup>
+</header>
+
+<figure id="shield">
+	<img src="img/Escudo_Jodar.svg" alt="Shield" width="78" height="142" >
+</figure>
+
+<nav class="dropdown">
+		<button class="dropbtn">Home <i class="down"></i></button>
+		<div class="dropdown-content">
+            <ul id="navList">
+                <a href="History.html"><li>History</li></a>
+                <a href="OurTown.html"><li>Our town</li></a>
+                <a href="Culture.html"><li>Culture</li></a>
+                <a href="WhatToDo.html"><li>What to do</li></a>
+            </ul>    
+		</div>
+</nav>
+
+<section>
+
+    <h1>Where we are</h1>
+    <article>
+    	
+       	<p>&emsp;Jódar, our small town, is located in south-central province of Jaen, autonomous community of Andalusia. It has a privileged location, in the center of the southern half of the province, a step away from the World Heritage cities, Úbeda and Baeza; as well as the natural park of Sierra Mágina and the natural park of Cazorla, Segura and las Villas, declared this last Biosphere Reserve by UNESCO.</p>
+    </article>
+
+    <figure id="banner">
+    	<img class="myImg" onClick="fullScreen(0)" src="img/Castle/Castillo1.jpg" width="23%">
+    	<img onClick="fullScreen(1)" class="myImg" src="img/Panorama/Jodar2.jpg" width="25%">
+        <img class="myImg" onClick="fullScreen(2)" src="img/Panorama/Jodar5.jpg" width="26%">
+    </figure>
+
+    <!-- The modal -->
+    <div id="myModal" class="modal">
+
+        <!-- The close button -->
+        <span class="close">&times;</span>
+
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+    </div>
+
+    
+    <article>   
+   		<p>&emsp;The municipal term has an extension of 149,33 km² The nucleus is located in the skirt of the Hill of San Cristobal, within the mountainous massif of Serrezuela de Jodar and Bedmar, to 627 ms of altitude.</p>
+    </article>
+    
+    <div class="iFrame">
+    	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12603.165334740208!2d-3.361552509817671!3d37.84177062130742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6e5c1c135b326d%3A0xbeb51f3db408efd3!2zMjM1MDAgSsOzZGFyLCBKYcOpbg!5e0!3m2!1ses!2ses!4v1555072853635!5m2!1ses!2ses" width="1000" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    
+	<div class="iFrame">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/04uqvFGjzQ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+	
+   	<div class="imgRow">
+    	<div class="imgColumn">
+        	<img class="myImg" onClick="fullScreen(3)" src="img/TownHall/Ayto.JPG" width="100%">
+            <img class="myImg" onClick="fullScreen(4)" src="img/FatimaSquare/Plaza_Fatima2.jpg" width="100%">
+        </div>
+        <div class="imgColumn">
+            <img class="myImg" onClick="fullScreen(5)" src="img/Castle/Castillo3.jpg" width="100%">
+            <img class="myImg" onClick="fullScreen(6)" src="img/Constitution/Barrio_la_Constitucion_Jodar.jpg" width="100%">
+        </div>
+        <div class="imgColumn">
+            <img class="myImg" onClick="fullScreen(7)" src="img/Church/CristoMisericordia1.jpg" width="100%">
+            <img class="myImg" onClick="fullScreen(8)" src="img/Church/SanIsidro1.jpg" width="100%">
+        </div>
+	</div>
+	
+	
+</section>
+
+<footer>
+	<p>This is a Project for the subject&ensp;<span>Technologies for Web Publishing I</span></p>
+    <p>University Of Hradec Králove</p>
+</footer>
+
+</body>
+
+</html>
+
